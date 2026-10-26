@@ -1,0 +1,45 @@
+// Logic-1 -- cigarParty
+// When squirrels get together for a party, they like to have cigars. A squirrel party is successful when the number of cigars is between 40 and 60, inclusive. Unless it is the weekend, in which case there is no upper bound on the number of cigars. Return true if the party with the given values is successful, or false otherwise.
+
+// Examples
+
+// cigarParty(30, false) → false
+// cigarParty(50, false) → true
+// cigarParty(70, true) → true
+
+function cigarParty(cigars, isWeekend) {
+
+  if (isWeekend === true) {
+
+    if (cigars >= 40) {
+      return true;
+    } else{
+
+      return false;
+    }
+  
+}else if (isWeekend === false){
+
+  if (cigars >= 40 && cigars <= 60) {
+    return true;
+  } else {
+
+    return false;
+  }
+}
+}
+
+
+
+let btnsend = document.querySelector (".btnsend")
+
+btnsend.addEventListener("click", function(){
+
+    let cigars = Number( document.querySelector(".Number").value);
+    let isWeekend = document.querySelector(".Text").value. toLOWERCASE() === "true"
+    let info = document.querySelector(".info");
+
+    let output = cigarParty(cigars, isWeekend);
+
+    info.textContent = "The result is: " + output; 
+})

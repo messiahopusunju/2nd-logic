@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dateFasion.css">
+</head>
+<body>
+    
+     <p>You and your date are trying to get a table at a restaurant. The parameter "you" is the stylishness of your clothes, in the range 0..10, and "date" is the stylishness of your date's clothes. The result getting the table is encoded as a number value with 0=no, 1=maybe, 2=yes. If either of you is very stylish, 8 or more, then the result is 2 (yes). With the exception that if either of you has style of 2 or less, then the result is 0 (no). Otherwise the result is 1 (maybe).</p>
+
+    <ul>
+        <li>dateFashion(5, 10) → 2</li>
+        <li>dateFashion(5, 2) → 0</li>
+        <li>dateFashion(5, 5) → 1</li>
+
+    </ul>
+
+    <p>
+      <label>you</label>
+      <input type="number" placeholder="first number" id="firstNumber" class="firstNumber" />
+    </p>
+
+    <p>
+      <label>date</label>
+      <input type="number" placeholder="second number" id="secondNumber" class="secondNumber" />
+    </p>
+    
+    <p><button id="btnsend" class="btnsend">Enter</button></p>
+    <div class="info" id="info"></div>
+
+    <script src="dateFasion.js"></script> 
+</body>
+</html>
